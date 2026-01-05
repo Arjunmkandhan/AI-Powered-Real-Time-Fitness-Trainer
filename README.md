@@ -47,9 +47,9 @@ for pose estimation and a custom \*\*Machine Learning model\*\* (Random Forest) 
 ```
 ## 🛠️ Installation
 
-Prerequisite: This project is optimized for Python 3.10. 
-Create a folder named ai-gym-tracker 
-Go to that folder 
+Prerequisite: This project is optimized for Python 3.10.   
+Create a folder named ai-gym-tracker   
+Go to that folder   
 ```bash 
 cd ai-gym-tracker
 ```
