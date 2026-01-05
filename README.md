@@ -1,22 +1,17 @@
-\# AI Gym Tracker: Real-Time Exercise Rep Counter 🏋️‍♂️
+# AI Gym Tracker: Real-Time Exercise Rep Counter 🏋️‍♂️
+
+
+A computer vision application that acts as a virtual personal trainer. It uses \*\*MediaPipe\*\* 
+for pose estimation and a custom \*\*Machine Learning model\*\* (Random Forest) to detect exercise states 
+(e.g., "Up" vs. "Down") and accurately count repetitions in real-time.
 
 
 
-!\[Python](https://img.shields.io/badge/Python-3.10-blue) !\[OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green) !\[MediaPipe](https://img.shields.io/badge/MediaPipe-Pose%20Estimation-orange) !\[Scikit-Learn](https://img.shields.io/badge/Sklearn-Random%20Forest-yellow)
+## 📹 Demo
 
 
 
-A computer vision application that acts as a virtual personal trainer. It uses \*\*MediaPipe\*\* for pose estimation and a custom \*\*Machine Learning model\*\* (Random Forest) to detect exercise states (e.g., "Up" vs. "Down") and accurately count repetitions in real-time.
-
-
-
-\## 📹 Demo
-
-\*(Place a screenshot or GIF of your project here to show it in action)\*
-
-
-
-\## 🧠 How It Works
+## 🧠 How It Works
 
 
 
@@ -30,7 +25,7 @@ A computer vision application that acts as a virtual personal trainer. It uses \
 
 
 
-\## 📂 Project Structure
+## 📂 Project Structure
 
 
 
@@ -49,22 +44,83 @@ A computer vision application that acts as a virtual personal trainer. It uses \
 ├── requirements.txt      # List of dependencies
 
 └── README.md             # Project Documentation
-
-🛠️ Installation
+```
+## 🛠️ Installation
 
 Prerequisite: This project is optimized for Python 3.10.
-
-
-
 Clone the repository:
-
-
-
 ```bash
-
-
-
 git clone \[https://github.com/your-username/ai-gym-tracker.git](https://github.com/arjunmkandhan/ai-gym-tracker.git)
 
 cd ai-gym-tracker
+```
+Install dependencies:
 
+```Bash
+pip install -r requirements.txt
+```
+
+## 🚀 Usage Guide
+This project comes with a pre-trained model for Bicep Curls. You can run it immediately or train it on your own exercises.
+
+Option 1: Run the App (Immediate)
+Simply run the main script to start the fitness tracker:
+
+```Bash
+python app.py
+```
+Press 'q' to exit the application.
+
+
+Option 2: Train Your Own Exercise (From Scratch)
+Step 1: Collect Data Run the data collector script to capture your own movements.
+
+```Bash
+python collect_data.py
+```
+Hold the "Up" position and press u to save coordinates.
+
+Hold the "Down" position and press d to save coordinates.
+
+Aim for ~100 samples of each.
+
+Step 2: Train the Model Run the training script to generate a new brain.
+
+```Bash
+python train.py
+```
+This reads exercise_data.csv.
+
+It trains a Random Forest Classifier.
+
+If accuracy > 90%, it saves a new body_language.pkl file.
+
+Step 3: Run the App
+
+```Bash
+python app.py
+```
+
+## ⚙️ Tech Stack
+Language: Python 3.10
+
+Libraries:
+
+mediapipe: For skeletal tracking.
+
+opencv-python: For video processing and UI drawing.
+
+scikit-learn: For the Random Forest classification algorithm.
+
+pandas & numpy: For data structure handling.
+
+## ⚠️ Troubleshooting
+Error: AttributeError: module 'mediapipe' has no attribute 'solutions'
+Cause: This happens if protobuf is version 4.x or higher.
+Fix: Run this command to downgrade protobuf:
+```Bash
+pip install protobuf==3.20.3
+```
+
+### 📜 License
+This project is open-source and available under the MIT License.
