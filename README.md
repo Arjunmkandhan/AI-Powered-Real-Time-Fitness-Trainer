@@ -30,20 +30,21 @@ for pose estimation and a custom \*\*Machine Learning model\*\* (Random Forest) 
 
 
 ```text
+├── main.py                 # Demo file for testing the computer vision 
 
-├── app.py                # Main Application: Runs the webcam \& counter
+├── app.py                  # Main Application: Runs the webcam \& counter
 
-├── train.py              # Trainer Script: Reads CSV -> Trains Model -> Saves .pkl
+├── train.py                # Trainer Script: Reads CSV -> Trains Model -> Saves .pkl
 
-├── collect\_data.py       # Data Collector: Captures your poses for the dataset
+├── collect\_data.py        # Data Collector: Captures your poses for the dataset
 
-├── exercise\_data.csv     # The dataset containing skeletal coordinates
+├── exercise\_data.csv      # The dataset containing skeletal coordinates
 
-├── body\_language.pkl     # The trained "Brain" (Model file)
+├── body\_language.pkl      # The trained "Brain" (Model file)
 
-├── requirements.txt      # List of dependencies
+├── requirements.txt        # List of dependencies
 
-└── README.md             # Project Documentation
+└── README.md               # Project Documentation
 ```
 ## 🛠️ Installation
 
