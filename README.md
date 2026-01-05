@@ -47,12 +47,15 @@ for pose estimation and a custom \*\*Machine Learning model\*\* (Random Forest) 
 ```
 ## 🛠️ Installation
 
-Prerequisite: This project is optimized for Python 3.10.
+Prerequisite: This project is optimized for Python 3.10. 
+Create a folder named ai-gym-tracker 
+Go to that folder 
+```bash 
+cd ai-gym-tracker
+```
 Clone the repository:
 ```bash
-git clone \[https://github.com/your-username/ai-gym-tracker.git](https://github.com/arjunmkandhan/ai-gym-tracker.git)
-
-cd ai-gym-tracker
+https://github.com/Arjunmkandhan/AI-Powered-Real-Time-Fitness-Trainer.git
 ```
 Install dependencies:
 
