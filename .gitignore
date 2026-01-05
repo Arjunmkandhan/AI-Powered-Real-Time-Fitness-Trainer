@@ -1,0 +1,26 @@
+# --- Python System Files ---
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+
+venv/
+.venv/
+env/
+ENV/
+
+# --- IDE Settings ---
+
+.vscode/
+.idea/
+
+# --- Project Data & Models ---
+
+# exercise_data.csv
+# body_language.pkl
+
+# --- Operating System Junk ---
+.DS_Store
+Thumbs.db
