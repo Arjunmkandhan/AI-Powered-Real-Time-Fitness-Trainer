@@ -12,7 +12,7 @@ import pandas as pd
 import pickle
 
 #load the model
-with open('body_language_now.pkl','rb') as f :
+with open('body_language.pkl','rb') as f :
     model = pickle.load(f)
 
 mp_pose = mp.solutions.pose
